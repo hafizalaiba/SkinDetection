@@ -407,6 +407,5 @@ def logout():
     session.clear()  # Clears all session data
     return redirect(url_for('home'))  # Redirect to homepage or login page
 
-if __name__ == '__main__':
-    create_table()
-    app.run(debug=True, port=5000)
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000)
